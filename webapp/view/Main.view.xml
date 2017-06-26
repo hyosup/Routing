@@ -1,0 +1,42 @@
+<mvc:View controllerName="FIRSTUI506.controller.Main" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m" xmlns:core="sap.ui.core">
+	<App>
+		<pages>
+		<Page title="Class Project">
+				<content>
+					<Label text="First Nmae:"/>
+					<Input id="name" placeholder="Enter FirstName" liveChange="change" />
+					<Label text="Age:"/>
+					<Input id="age" liveChange="change"/>
+					<Label text="Country:"/>
+					<ComboBox id="country" selectionChange="handleSelectionChange">
+						<items>
+							<core:Item key="E" text="미국"/>
+							<core:Item key="D" text="독일"/>
+							<core:Item key="3" text="한국"/>
+						</items>
+					</ComboBox>
+					<Button text="Submit" type="Accept" press="handleSubmit"/>
+					<Table>
+						<columns>
+							<Column>
+								<Label text="ID"/>
+							</Column>
+							<Column>
+								<Label text="Name"/>
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem>
+								<cells>
+									<Text text="123"/>
+									<Text text="456"/>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
